@@ -42,35 +42,35 @@ define([
             selectionIndicator: false,
             homeButton: false,
             sceneModePicker: false,
+            navigationHelpButton: true,
+            infoBox: true,
             navigationHelpButton: false,
-            infoBox: false,
-            navigationHelpButton: false,
-            navigationInstructionsInitiallyVisible: false,
-            animation: false,
-            timeline: false,
-            fullscreenButton: false,
-            allowTextureFilterAnisotropic: false,
-            contextOptions: {
-                webgl: {
-                    alpha: false,
-                    antialias: true,
-                    preserveDrawingBuffer: true,
-                    failIfMajorPerformanceCaveat: false,
-                    depth: true,
-                    stencil: false,
-                    anialias: false
-                },
-            },
-            targetFrameRate: 60,
-            resolutionScale: 0.1,
-            orderIndependentTranslucency: true,
-            imageryProvider: undefined,
-            baseLayerPicker: false,
-            geocoder: false,
-            automaticallyTrackDataSourceClocks: false,
-            dataSources: null,
-            clock: null,
-            terrainShadows: Cesium.ShadowMode.DISABLED
+            // navigationInstructionsInitiallyVisible: false,
+            // animation: false,
+            // timeline: true,
+            // fullscreenButton: true,
+            // allowTextureFilterAnisotropic: false,
+            // contextOptions: {
+            //     webgl: {
+            //         alpha: false,
+            //         antialias: true,
+            //         preserveDrawingBuffer: true,
+            //         failIfMajorPerformanceCaveat: false,
+            //         depth: true,
+            //         stencil: false,
+            //         anialias: false
+            //     },
+            // },
+            // targetFrameRate: 60,
+            // resolutionScale: 0.1,
+            // orderIndependentTranslucency: true,
+            // imageryProvider: undefined,
+            // baseLayerPicker: false,
+            // geocoder: false,
+            // automaticallyTrackDataSourceClocks: false,
+            // dataSources: null,
+            // clock: null,
+            // terrainShadows: Cesium.ShadowMode.DISABLED
         });
 
         var center = Cesium.Cartesian3.fromDegrees(
@@ -117,7 +117,7 @@ define([
                 material: Cesium.Color.RED.withAlpha(0.2)
             }
         };
-        var Polygon = cesium.viewer.entities.add(entity);
+        //var Polygon = cesium.viewer.entities.add(entity);
 
         //Three.js Objects
         // Lathe geometry
