@@ -193,9 +193,10 @@ define([
             var latDir = new THREE.Vector3().subVectors(bottomLeft, topLeft).normalize();
 
             // configure entity position and orientation
+            // 配置three.js object 的位置和方向
             _3Dobjects[id].threeMesh.position.copy(center);
             _3Dobjects[id].threeMesh.lookAt(centerHigh);
-            _3Dobjects[id].threeMesh.up.copy(latDir);
+            //_3Dobjects[id].threeMesh.up.copy(latDir);
         }
 
         // Clone Cesium Camera projection position so the
